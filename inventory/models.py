@@ -105,7 +105,7 @@ class ProductAttributeOption(models.Model):
 class ProductVariant(models.Model):
     """
     ProductVariant model represents a variant of a product.
-    E.g., Red Shirt, 128 GB, etc.
+    E.g., Red Shirt, 128 GB Samsung Galaxy S10, etc.
     """
     uuid = models.UUIDField(default=uuid.uuid4, editable=False, unique=True)
     product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name='variants')
